@@ -9,6 +9,17 @@ public class TesteTree {
 		tree.add("A");
 		tree.add("D");
 		tree.add("F");
+		
+		tree.mostrarPrefix();
+		
+		//System.out.println("\n" + tree.remover("D"));
+		
+		//tree.add("D");
+		tree.add("E");
+		
+		System.out.println(tree.remover("C"));
+		
+		tree.mostrarPrefix();
 	}
 
 }
