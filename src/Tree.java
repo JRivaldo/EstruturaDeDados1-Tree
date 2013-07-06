@@ -148,13 +148,15 @@ public class Tree {
 						this.raiz.setPai(null);
 						this.realocarTree(aux);
 					}
-					else{
+					else if(no.getFilhoEsq() != null){
 						aux = no.getFilhoDir();
-						this.raiz = no.getFilhoDir();
+						this.raiz = no.getFilhoEsq();
 						this.raiz.setPai(null);
 						this.realocarTree(aux);
 					}
-					
+					else{
+						this.raiz = null;
+					}
 					return result;
 				}
 				if(pai.getFilhoDir() != null){
